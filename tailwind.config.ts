@@ -15,6 +15,13 @@ export default {
         secondaryBrand: "var(--color-secondaryBrand)",
       },
     },
+    container: {
+      center: true,
+      padding: '1rem',
+      screens: {
+        '2xl': '1240px',
+      },
+    },
   },
   plugins: [],
 } satisfies Config;

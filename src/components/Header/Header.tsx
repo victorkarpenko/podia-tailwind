@@ -4,8 +4,8 @@ import Logo from "../Logo/Logo";
 
 const Header = () => {
   return (
-    <header className="bgc-white border-b border-grey-100">
-      <div className="container mx-auto flex h-[50px] justify-between items-center">
+    <header className="bg-white border-b border-grey-100 fixed w-full left-0 top-0 z-[3]">
+      <div className="container flex h-[50px] justify-between items-center">
         <div className="flex items-center">
           <div className="mr-[32px]">
             <Logo />
