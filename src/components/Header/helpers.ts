@@ -8,7 +8,7 @@ export const navigationItems: NavigationItem[] = [
       href: '/feature/1',
     },
     {
-      label: 'Feature 2',
+      label: 'Feature long name',
       href: '/feature/2',
     }],
   },

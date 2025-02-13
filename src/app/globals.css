@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-mainBrand: #4b2aad;
+  --color-secondaryBrand: #9484c6;
 }
 
 body {

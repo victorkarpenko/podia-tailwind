@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Dropdown from "../Dropdown/Dropdown";
 
 export interface NavigationItem {
   label: string;
@@ -14,11 +15,11 @@ const NavigationItem = (props: NavigationItem) => {
   } = props;
 
   if (children) {
-    return (<span className="mx-3">{label}</span>)
+    return <Dropdown label={label} items={children} />;
   }
 
   if (href) {
-    return <Link href={href} className="mx-3">{label}</Link>
+    return <Link href={href} className="py-2 mx-3 hover:text-mainBrand">{label}</Link>
   }
 
   return null;
