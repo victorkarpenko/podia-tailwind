@@ -1,4 +1,4 @@
-import { navigationItems } from "./helpers";
+import { navigationItems } from "../../data/navigation";
 import NavigationItem from "../NavigationItem/NavigationItem";
 import Logo from "../Logo/Logo";
 

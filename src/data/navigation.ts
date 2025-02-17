@@ -1,4 +1,4 @@
-import { NavigationItem } from "../NavigationItem/NavigationItem";
+import { NavigationItem } from "../components/NavigationItem/NavigationItem";
 
 export const navigationItems: NavigationItem[] = [
   {

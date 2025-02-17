@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         mainBrand: "var(--color-mainBrand)",
         secondaryBrand: "var(--color-secondaryBrand)",
+        fury: "var(--color-fury)",
       },
     },
     container: {
