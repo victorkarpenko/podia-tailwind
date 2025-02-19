@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         mainBrand: "var(--color-mainBrand)",
+        darkBrand: "var(--color-darkBrand)",
         secondaryBrand: "var(--color-secondaryBrand)",
         fury: "var(--color-fury)",
       },
