@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 
 const Subtitle = ({ children }: { children: ReactNode }) => (
-  <h2 className='uppercase text-gray-400 text-xs font-semibold mb-3'>
+  <h4 className='uppercase text-gray-400 text-xs font-semibold mb-3'>
     {children}
-  </h2>
+  </h4>
 );
 
 export default Subtitle;
