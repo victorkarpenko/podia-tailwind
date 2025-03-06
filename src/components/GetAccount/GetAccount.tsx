@@ -8,8 +8,10 @@ const GetAccount = () => {
       <Title variant='h2' color='white'>
         Get your free Podia account
       </Title>
-      <Paragraph color="secondaryBrand">
-        Join the 150,000+ creators who use Podia to create websites, sell digital products, and build online communities.
+      <Paragraph>
+        <span className="text-secondaryBrand">
+          Join the 150,000+ creators who use Podia to create websites, sell digital products, and build online communities.
+        </span>
       </Paragraph>
       <Button
         variant="light"

@@ -1,6 +1,7 @@
 import { CSSProperties, MouseEventHandler, ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
-type ButtonVariant = 'primary' | 'light'
+type ButtonVariant = 'primary' | 'light' | 'text';
 interface Props {
   variant?: ButtonVariant;
   type?: HTMLButtonElement['type'];
@@ -10,12 +11,30 @@ interface Props {
 }
 
 const getVariantClasses = (variant: ButtonVariant): string => {
-  const classnames = ['font-semibold', 'py-3', 'px-7', 'rounded-full', 'transition-bg', 'duration-300'];
+  const classnames = [
+    'inline-flex', 
+    'items-center', 
+    'font-semibold', 
+    'py-3', 
+    'px-7', 
+    'rounded-full', 
+    'transition-all', 
+    'duration-300',
+  ];
 
-  if(variant === 'light') {
-    classnames.push('bg-secondaryBrand', 'hover:bg-mainBrand', 'text-white')
-  } else {
-    classnames.push('bg-mainBrand', 'hover:bg-darkBrand', 'text-white')
+  switch (variant) {
+    case 'light': {
+      classnames.push('bg-secondaryBrand', 'hover:bg-mainBrand', 'text-white');
+      break;
+    }
+    case 'text': {
+      classnames.push('bg-transparent', 'text-mainBrand', 'hover:text-darkBrand', 'px-0');
+      break;
+    }
+    default: {
+      classnames.push('bg-mainBrand', 'hover:bg-darkBrand', 'text-white');
+      break;
+    }
   }
 
   return classnames.join(' ');
@@ -34,7 +53,10 @@ const Button = (props: Props) => {
     <button
       type={type}
       onClick={onClick}
-      className={`${getVariantClasses(variant)} w-[${width}]`}
+      className={twMerge(
+        getVariantClasses(variant),
+        `w-[${width}]`,
+      )}
     >
       {children}
     </button>

@@ -7,11 +7,10 @@ interface Props {
 const Paragraph = (props: Props) => {
   const {
     children,
-    color = 'gray-600',
   } = props;
 
   return (
-    <p className={`text-lg text-${color} mb-3 leading-[2rem]`}>
+    <p className={`text-lg text-gray-600 mb-3 leading-[2rem]`}>
       {children}
     </p>
   );
